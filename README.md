@@ -31,29 +31,20 @@ The entire user interface (UI) and user experience (UX) were designed and protot
 <img width="1920" height="937" alt="image" src="https://github.com/user-attachments/assets/503b76bc-b105-4ea4-a355-416f3198c99a" />
 
 🚀 Key Features
-🏠 Homepage: A captivating landing page with brand information and the latest product collections.
-
-🛍️ Product Page: A categorized product gallery (Men, Women, Accessories) with an interactive interface.
-
-📄 Product Detail Page: An in-depth view for each product, complete with a description, image gallery, and quantity selector.
-
-📅 Event Page: Information about fashion events and an interactive registration form with JavaScript validation.
-
-🏢 About Us Page: The story and philosophy behind the Christian Wijaya brand, showcasing its heritage and commitment to sustainable luxury.
-
-📱 Fully Responsive Design: A layout that adapts perfectly to various screen sizes, from desktop to mobile, using Media Queries.
+    🏠 Homepage: A captivating landing page with brand information and the latest product collections.
+    🛍️ Product Page: A categorized product gallery (Men, Women, Accessories) with an interactive interface.
+    📄 Product Detail Page: An in-depth view for each product, complete with a description, image gallery, and quantity selector.
+    📅 Event Page: Information about fashion events and an interactive registration form with JavaScript validation.
+    🏢 About Us Page: The story and philosophy behind the Christian Wijaya brand, showcasing its heritage and commitment to sustainable luxury.
+    📱 Fully Responsive Design: A layout that adapts perfectly to various screen sizes, from desktop to mobile, using Media Queries.
 
 🛠️ Built With
 This project was built using the following core front-end technologies:
-
-HTML5: For the structure and semantic content of the pages.
-
-CSS3: For styling, layout (Flexbox), and responsive design.
-
-JavaScript: For dynamic functionality such as form validation and other UI interactions.
-
-Figma: For UI/UX design and prototyping.
+    HTML5: For the structure and semantic content of the pages.
+    CSS3: For styling, layout (Flexbox), and responsive design.
+    JavaScript: For dynamic functionality such as form validation and other UI interactions.
+    Figma: For UI/UX design and prototyping.
 
 📧 Contact
-LinkedIn: www.linkedin.com/in/piercejosse
+    LinkedIn: www.linkedin.com/in/piercejosse
 
