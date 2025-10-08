@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Wijaya - Event</title>
+  <link rel="icon" type="image/x-icon" href="../assets/logo/logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/logo/logo.png">
+  <link rel="apple-touch-icon" href="../assets/logo/logo.png">
+  <link rel="stylesheet" href="../css/event.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="logo">
+      <img src="../assets/logo/logowithtext.png" alt="Christian Wijaya Logo" />
+    </div>
+    <div class="nav-menu">
+      <a href="homepage.html">Home</a>
+      <a href="product.html">Product</a>
+      <u>Event</u>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="header-right">
+      <input type="text" class="search-bar" placeholder="Search..." />
+      <img src="../assets/icons/search.png" alt="Search" class="icon-search" />
+      <img src="../assets/icons/cart.png" alt="Cart" class="iconcart" />
+      <img src="../assets/icons/profile.png" alt="Profile" class="iconacc" />
+    </div>
+  </div>
+
+  <!-- Background Section -->
+  <div class="background">
+
+    <!-- Trailer Section -->
+    <section class="trailerVideo">
+      <img src="../assets/images/Event Page/4.webp" alt="Event Image" class="trailerImage" />
+    </section>
+
+    <!-- Title -->
+    <div class="eventTitle">
+      <p>Christian Wijaya Latest Event</p>
+    </div>
+
+    <!-- Event Section 1 -->
+    <div class="eventSection">
+      <div class="imageSection">
+        <img src="../assets/images/Event Page/1.jpg" alt="Event Image 1" />
+      </div>
+      <div class="imageText">
+        <h1>Christian Wijaya Fashion Week 2024</h1>
+        <p>
+          Christian Wijaya Fashion Week showcases the epitome of luxury and sophistication, where each piece
+          reflects unparalleled artistry and modern refinement. This prestigious event celebrates the brand's
+          commitment to sustainable luxury, featuring designs crafted from responsibly sourced materials and
+          ethical craftsmanship. The runway becomes a canvas for innovation and heritage, presenting exquisite
+          apparel and statement accessories that define contemporary elegance. Join us in experiencing a world
+          of fashion that seamlessly blends tradition with modern sophistication, embodying the very essence
+          of Christian Wijaya's legacy.
+        </p>
+      </div>
+    </div>
+
+    <!-- Event Section 2 -->
+    <div class="eventSection">
+      <div class="imageSection">
+        <img src="../assets/images/Event Page/2.jpg" alt="Event Image 2" />
+      </div>
+      <div class="imageText">
+        <h1>Christian Wijaya Fashion Week 2023</h1>
+        <p>
+          Christian Wijaya Fashion Week 2023 emerges as an exclusive celebration of elegance and luxury in the
+          fashion world, showcasing spectacular collections from renowned luxury fashion brands. With the
+          theme "Timeless Opulence", this event presents the perfect fusion of classic, timeless designs and
+          visionary modern innovations. Every piece displayed reflects high aesthetics, exquisite
+          craftsmanship, and premium materials that symbolize status and prestige. Set in a grand venue with
+          an exclusive atmosphere, Christian Wijaya Fashion Week 2023 serves as a stage for top designers,
+          world-class models, and fashion enthusiasts who appreciate beauty in every detail. Witness the
+          brilliance of haute couture, elegant silhouettes, and fashion trends that will redefine luxury for
+          the future!
+        </p>
+      </div>
+    </div>
+
+    <!-- Registration Divider -->
+    <div class="eventsLine"></div>
+
+    <!-- Registration Section -->
+    <div class="regisSec">
+      <div class="imgRegisSec">
+        <img src="../assets/images/Event Page/3.png" alt="Registration Image" />
+      </div>
+      <div class="txtRegisSec">
+        <p>Be Part of the Legacy</p>
+        <form id="registrationForm" onsubmit="return validateForm()">
+          <div class="formGroup">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" />
+            <small id="fullNameError" class="error-message"></small>
+          </div>
+
+          <div class="formGroup">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <small id="emailError" class="error-message"></small>
+          </div>
+
+          <div class="formGroup">
+            <label for="birthDate">Birth Date</label>
+            <input type="date" id="birthDate" name="birthDate" />
+            <small id="birthDateError" class="error-message"></small>
+          </div>
+
+          <div class="formGroup">
+            <label for="gender">Gender</label>
+            <div class="genderOptions">
+              <div class="genderOption">
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+              </div>
+              <div class="genderOption">
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <small id="genderError" class="error-message"></small>
+          </div>
+
+          <div class="formGroup">
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">I agree to the <a href="#">Terms of Service</a></label>
+            <small id="termsError" class="error-message"></small>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img src="../assets/logo/logowithtext.png" class="modal-logo" alt="Logo" />
+        <div class="modal-text">
+          <h2>Registration Complete!</h2>
+          <p class="success-message">You're Successfully Registered</p>
+          <div class="modal-divider"></div>
+          <p class="confirmation-text">
+            Thank you for joining Christian Wijaya Fashion Week 2024.<br />
+            A confirmation email with detailed instructions<br />
+            will arrive in your inbox shortly.
+          </p>
+          <button class="success-btn" onclick="closeModal()">Continue Exploring</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>
+            Customer Service<br />
+            Monday to Friday: 9:00 AM - 9:00 PM EST<br />
+            Saturday: 10:00 AM - 9:00 PM EST<br />
+            Contact Us: 800-555-1234
+          </p>
+        </div>
+        <div class="footer-center">
+          <img src="../assets/logo/logo.png" alt="Logo" class="footer-logo" />
+        </div>
+        <div class="footer-right">
+          <p>Follow us</p>
+          <div class="social-icons">
+            <img src="../assets/icons/instagram.png" alt="Instagram" />
+            <img src="../assets/icons/twitter.png" alt="Twitter" />
+            <img src="../assets/icons/mail.png" alt="Email" />
+            <img src="../assets/icons/facebook.png" alt="Facebook" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../js/event.js"></script>
+</body>
+
+</html>

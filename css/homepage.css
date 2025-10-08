@@ -1,0 +1,715 @@
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../assets/font/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+img {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    font-family: 'EB Garamond', serif;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Fade in saat scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 70px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 70px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.nav-menu a {
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: gray;
+
+}
+
+.icon-search {
+    display: none;
+    /* Show search icon */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.search-bar {
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    outline: none;
+}
+
+.iconcart {
+    height: 40px;
+}
+
+.iconacc {
+    height: 40px;
+
+}
+
+.background {
+    background-color: #FFF3E5;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.imageTop {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: white;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Ensure the image is at the bottom */
+}
+
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    /* Gradient starts from the bottom */
+    z-index: 2;
+    /* Ensure the gradient overlay is above the image */
+}
+
+.imageContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+.brand-description {
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+    position: relative;
+    text-align: justify;
+}
+
+.latest-products {
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.latest-products h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    justify-items: center;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 150px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    position: relative;
+
+}
+
+.product-item:hover {
+    transform: scale(1.03);
+}
+
+.product-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-overlay .text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.product-item:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-item:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-title {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.product-hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+}
+
+.collection-showcase {
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.collection-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px;
+}
+
+.collection-item:first-child {
+    flex-direction: row-reverse;
+}
+
+
+.collection-item:last-child {
+    flex-direction: row;
+}
+
+.collection-desc {
+    flex: 1;
+    text-align: justify;
+}
+
+.collection-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.collection-desc {
+    flex: 1;
+    text-align: justify;
+}
+
+.collection-desc h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.collection-desc p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px 50px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    width: 100%;
+    position: relative;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.footer-left {
+    justify-content: flex-start;
+}
+
+.footer-right {
+    justify-content: flex-end;
+}
+
+.footer-right {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    /* Tambahkan ini */
+    align-items: flex-end;
+    /* Untuk alignment ke kanan */
+    gap: 5px;
+    /* Jarak antara teks dan ikon */
+}
+
+.footer-right p {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: center;
+    /* Tambahkan ini */
+    align-items: center;
+    /* Untuk alignment ke kanan */
+}
+
+
+.footer-right p {
+    margin-bottom: 8px;
+    /* Jarak antara "Follow us" dan ikon */
+}
+
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .product-gallery {
+        max-height: 300px;
+    }
+
+    .latest-products h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .latest-products {
+        margin-bottom: 10px;
+    }
+
+    .product-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-height: 2000px;
+    }
+
+    .product-item {
+        height: 600px;
+        width: 450px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .text-center {
+        font-size: 10px;
+    }
+
+    .latest-products h2 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        background-color: #FFF3E5;
+        width: 100%;
+        padding-bottom: 0px;
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 5px 10px;
+        height: 30px;
+        max-width: auto;
+    }
+
+    .header-right {
+        margin-left: auto;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+        margin-left: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+
+    .nav-menu u {
+        font-size: 10px;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .icon-search {
+        display: block;
+        height: 15px;
+        /* Show search icon */
+    }
+
+    .iconcart {
+        height: 15px;
+    }
+
+    .iconacc {
+        height: 15px;
+        align-items: center;
+    }
+
+    .imageTop {
+        height: 250px;
+    }
+
+    .imageContent {
+        font-size: 8px;
+    }
+
+    .product-gallery {
+        max-height: 300px;
+    }
+
+    .latest-products h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .latest-products {
+        margin-bottom: 10px;
+    }
+
+    .product-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-height: 800px;
+    }
+
+    .product-item {
+        height: 270px;
+        width: 200px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .text-center {
+        font-size: 10px;
+    }
+
+    .collection-item {
+        margin-left: 5px;
+        margin-right: 5px;
+        max-width: 400px;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .collection-showcase {
+        transform-origin: center;
+        align-items: center;
+        height: 240px;
+        margin-top: 10px;
+        /* Maintain spacing in smaller screens */
+        display: flex;
+
+
+    }
+
+    .collection-image {
+        height: 240px;
+        width: 190px;
+        display: flex;
+
+    }
+
+    .collection-item {
+        gap: 10px;
+    }
+
+    .collection-desc p {
+        font-size: 8px;
+        display: flex;
+    }
+
+    .collection-desc h3 {
+        font-size: 12px;
+        display: flex;
+    }
+
+    .content-image {
+        flex: 1;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-text {
+        max-width: 85%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-text h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+
+    .content-text p {
+        font-size: 12px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .content-section.reverse {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
+        min-height: 500px;
+        /* Membuat tinggi section seragam */
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: #fff;
+        padding: 20px 50px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-center {
+        position: static;
+        transform: none;
+        order: 1;
+        min-width: auto;
+
+    }
+
+    .footer-left {
+        order: 2;
+        /* Customer service di posisi kedua */
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-right {
+        order: 3;
+        /* Social media di posisi terakhir */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-left p,
+    .footer-right p {
+        font-size: 10px;
+        margin: 0 auto;
+        max-width: 280px;
+        /* Membatasi lebar teks agar tidak terlalu melebar */
+    }
+
+    .footer-logo {
+        max-width: 60px;
+        /* Ukuran logo yang sudah ada */
+    }
+
+    .social-icons {
+        gap: 10px;
+        width: auto;
+        /* Perbaikan dari width:2px yang salah */
+    }
+
+    .social-icons img {
+        width: 20px;
+        /* Ukuran baru untuk ikon media sosial */
+        height: auto;
+    }
+
+    .footer-right p {
+        margin-bottom: 1px;
+    }
+}
