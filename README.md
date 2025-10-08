@@ -14,14 +14,21 @@ An elegant and responsive front-end website prototype for the luxury fashion bra
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
 </p>
 </div>
 
 ✨ About This Project
 Christian Wijaya is a front-end website project designed to represent the identity of a luxury fashion brand. Its goal is to create a sophisticated, minimalist, and functional online platform that reflects the elegance and high quality of its products. This project consists of five fully responsive main pages, ensuring a seamless user experience across all devices.
 
+🎨 Design & Prototyping
+The entire user interface (UI) and user experience (UX) were designed and prototyped in Figma before the development phase. This allowed for a clear and consistent design vision, focusing on a clean aesthetic that embodies the luxury of the Christian Wijaya brand.
+<p align="center">
+<a href="https://www.figma.com/design/dop55WBSiOEJconHAEjea3/Cristian-Wijaya?node-id=0-1&t=9h9EoDOzCng8qnKq-1"><strong>🔗 View the Figma Design File</strong></a>
+</p>
+
 📸 Project Showcase
-(Note: Replace link-to-your-screenshot.png with the URL of your project screenshot!)
+<img width="1920" height="937" alt="image" src="https://github.com/user-attachments/assets/503b76bc-b105-4ea4-a355-416f3198c99a" />
 
 🚀 Key Features
 🏠 Homepage: A captivating landing page with brand information and the latest product collections.
@@ -45,6 +52,8 @@ CSS3: For styling, layout (Flexbox), and responsive design.
 
 JavaScript: For dynamic functionality such as form validation and other UI interactions.
 
+Figma: For UI/UX design and prototyping.
+
 📧 Contact
 LinkedIn: www.linkedin.com/in/piercejosse
-<img width="1920" height="937" alt="image" src="https://github.com/user-attachments/assets/503b76bc-b105-4ea4-a355-416f3198c99a" />
+
