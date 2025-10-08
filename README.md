@@ -19,9 +19,11 @@ An elegant and responsive front-end website prototype for the luxury fashion bra
 </div>
 
 ✨ About This Project
+
 Christian Wijaya is a front-end website project designed to represent the identity of a luxury fashion brand. Its goal is to create a sophisticated, minimalist, and functional online platform that reflects the elegance and high quality of its products. This project consists of five fully responsive main pages, ensuring a seamless user experience across all devices.
 
 🎨 Design & Prototyping
+
 The entire user interface (UI) and user experience (UX) were designed and prototyped in Figma before the development phase. This allowed for a clear and consistent design vision, focusing on a clean aesthetic that embodies the luxury of the Christian Wijaya brand.
 <p align="center">
 <a href="https://www.figma.com/design/dop55WBSiOEJconHAEjea3/Cristian-Wijaya?node-id=0-1&t=9h9EoDOzCng8qnKq-1"><strong>🔗 View the Figma Design File</strong></a>
@@ -31,6 +33,7 @@ The entire user interface (UI) and user experience (UX) were designed and protot
 <img width="1920" height="937" alt="image" src="https://github.com/user-attachments/assets/503b76bc-b105-4ea4-a355-416f3198c99a" />
 
 🚀 Key Features
+
     🏠 Homepage: A captivating landing page with brand information and the latest product collections.
     🛍️ Product Page: A categorized product gallery (Men, Women, Accessories) with an interactive interface.
     📄 Product Detail Page: An in-depth view for each product, complete with a description, image gallery, and quantity selector.
@@ -39,7 +42,9 @@ The entire user interface (UI) and user experience (UX) were designed and protot
     📱 Fully Responsive Design: A layout that adapts perfectly to various screen sizes, from desktop to mobile, using Media Queries.
 
 🛠️ Built With
+
 This project was built using the following core front-end technologies:
+
     HTML5: For the structure and semantic content of the pages.
     CSS3: For styling, layout (Flexbox), and responsive design.
     JavaScript: For dynamic functionality such as form validation and other UI interactions.
