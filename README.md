@@ -3,25 +3,6 @@
 <img src="assets/logo/logowithtext.png" alt="Christian Wijaya Logo" width="400"/>
 <h1>Christian Wijaya - Luxury Brand Website</h1>
 <p>
-Sebuah prototipe website front-end yang elegan dan responsif untuk merek fashion mewah Christian Wijaya.
-</p>
-
-<p>
-<a href="https://github.com/your-username/your-repository/blob/main/LICENSE">
-<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
-</a>
-<img src="https://img.shields.io/badge/Status-Completed-success" alt="Status: Completed">
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-</p>
-</div>
-Tentu, ini adalah terjemahan README.md ke dalam bahasa Inggris:
-
-<div align="center">
-<img src="assets/logo/logowithtext.png" alt="Christian Wijaya Logo" width="400"/>
-<h1>Christian Wijaya - Luxury Brand Website</h1>
-<p>
 An elegant and responsive front-end website prototype for the luxury fashion brand Christian Wijaya.
 </p>
 
