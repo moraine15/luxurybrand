@@ -45,19 +45,6 @@ CSS3: For styling, layout (Flexbox), and responsive design.
 
 JavaScript: For dynamic functionality such as form validation and other UI interactions.
 
-🏁 Getting Started
-To get a local copy up and running, follow these simple steps.
-
-Clone the repository
-
-Bash
-
-git clone https://github.com/your-username/your-repository.git
-Open the homepage.html file
-
-Open the homepage.html file in your favorite browser.
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
-
 📧 Contact
 LinkedIn: www.linkedin.com/in/piercejosse
+<img width="1920" height="937" alt="image" src="https://github.com/user-attachments/assets/503b76bc-b105-4ea4-a355-416f3198c99a" />
